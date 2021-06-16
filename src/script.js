@@ -1,4 +1,3 @@
-import "./style.css";
 let dateSpan = document.querySelector("#currentDate");
 let currentTime = new Date();
 
