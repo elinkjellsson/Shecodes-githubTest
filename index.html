@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
+    <title>Homework weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+          <form id="search-form">
+              <div class="form-row">
+                <div class="col-8 btn">
+               <input 
+                type="search" 
+                placeholder="Enter a city..." 
+                class="form-control" 
+                id="search-city-name" 
+                />
+             </div>
+             <div class="col-2 btn">
+                <button 
+                  type="submit" 
+                  value="Search" 
+                  id="searchButton" 
+                  class="btn btn-primary">Search</button>
+             </div>  
+             <div class="col-2 btn">
+                <button 
+                  type="submit" 
+                  value="Search" 
+                  id="locationButton" 
+                  class="btn btn-primary">Location</button>
+               </div> 
+              </form>
+              
+            <div class="col-12 current">
+              <h1 id="city">Halmstad</h1>
+              <span id="currentDate">Monday 21:55</span>
+              <br />
+              <small id="weatherDescription">Sunny</small>
+              <br>
+              <span class="temperature" id="temperature">23</span>
+                <span class="units">
+                  <a href="#" id="celcius">ºC</a>
+                  |
+                  <a href="#" id="fahrenheit">ºF</a>
+                </span>
+            </div>
+          </div>
+          <div class="row-rise-set">
+            <div class="col-6">
+              <img
+                id="left"
+                src="https://img.icons8.com/metro/52/000000/sunrise.png"
+              />
+              <p class="morning">04:27</p>
+            </div>
+            <div class="col-6">
+              <img
+                id="right"
+                src="https://img.icons8.com/metro/52/000000/sunset.png"
+              />
+              <p class="evening">21:51</p>
+            </div>
+          </div>
+          <hr />
+          <section class="row-week">
+            <div class="col days">
+              <ul>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+              </ul>
+            </div>
+            <div class="col icons">
+              <i class="fas fa-cloud-rain"></i>
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="col degreesDay">
+              <ul>
+                <li>21°</li>
+                <li>21°</li>
+                <li>19°</li>
+                <li>19°</li>
+                <li>22°</li>
+                <li>23°</li>
+              </ul>
+            </div>
+            <div class="col degreesNight">
+              <ul>
+                <li>11°</li>
+                <li>9°</li>
+                <li>11°</li>
+                <li>11°</li>
+                <li>12°</li>
+                <li>13°</li>
+              </ul>
+            </div>
+          </section>
+        <hr />
+        <footer>Coded by Elin Kjellsson</footer>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/22441212cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.container {
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 4px #b3b3b3;
+  border: 3px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 700px;
+  background: radial-gradient(
+    circle at 0.4% -0.6%,
+    rgb(143, 170, 210) 0%,
+    rgb(255, 177, 177) 90%
+  );
+}
+h1 {
+  font-size: 50px;
+  padding-top: 30px;
+}
+h2 {
+  font-size: 40px;
+  padding-top: 10px;
+}
+p {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-size: 20px;
+}
+img {
+  width: 80px;
+}
+ul {
+  list-style: none;
+}
+i {
+  padding: 4px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.form-row {
+  box-sizing: border-box;
+  display: block;
+  padding: 30px;
+}
+
+.current {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.row-rise-set {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.col-6 {
+  display: block;
+  margin: 0 auto;
+}
+
+.units {
+  font-size: 30px;
+}
+#celcius {
+  color: #000;
+}
+#fahrenheit {
+  color: #000;
+}
+#temperature {
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+#left {
+  float: left;
+  left: 20px;
+  margin-left: 60px;
+}
+#right {
+  float: right;
+  right: 20px;
+  margin-right: 60px;
+}
+
+.row-week {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.col .days {
+  text-align: left;
+}
+
+.icons {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.degreesDay {
+  display: inline-block;
+  text-align: right;
+}
+.degreesNight {
+  text-align: right;
+  margin-right: 40px;
+}
+
+footer {
+  text-align: center;
+  font-family: monospace;
+  opacity: 80%;
+}
