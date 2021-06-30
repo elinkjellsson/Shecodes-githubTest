@@ -55,9 +55,9 @@
               <br>
               <span class="temperature" id="temperature">23</span>
                 <span class="units">
-                  <a href="#" id="celcius">ºC</a>
+                  <a href="#" class="active" id="celsius-link">ºC</a>
                   |
-                  <a href="#" id="fahrenheit">ºF</a>
+                  <a href="#" id="fahrenheit-link">ºF</a>
                 </span>
             </div>
           </div>
@@ -67,19 +67,70 @@
                 id="left"
                 src="https://img.icons8.com/metro/52/000000/sunrise.png"
               />
-              <p class="morning">04:27</p>
+              <p id="sunrise">04:27</p>
             </div>
             <div class="col-6">
               <img
                 id="right"
                 src="https://img.icons8.com/metro/52/000000/sunset.png"
               />
-              <p class="evening">21:51</p>
+              <p id="sunset">21:51</p>
             </div>
           </div>
           <hr />
-          <section class="row-week">
-            <div class="col days">
+          <div class="row" id="weatherForecast">
+            <div class="col-2">
+              <div class="forecast-day">Mon</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+              <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-day">Tue</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+            <div class="col-2">
+             <div class="forecast-day">Wed</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-day">Thu</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-day">Fri</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+              <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-day">Sat</div>
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+              <div class="forecastTemp">
+                <span class="forecast-temp-max">21°</span>
+                <span class="forecast-temp-min">11°</span>
+                </div>
+            </div>
+          </div>
+          <!--
+          <div class="col" id="weatherForecast">
+            <div class="col-3" id="forecastDays">
               <ul>
                 <li>Thu</li>
                 <li>Fri</li>
@@ -89,15 +140,15 @@
                 <li>Tue</li>
               </ul>
             </div>
-            <div class="col icons">
-              <i class="fas fa-cloud-rain"></i>
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-cloud-sun"></i>
+            <div class="col-3">
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+               <img id="forecastIcon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
             </div>
-            <div class="col degreesDay">
+            <div class="col-3" id="forecastTempDay">
               <ul>
                 <li>21°</li>
                 <li>21°</li>
@@ -107,7 +158,7 @@
                 <li>23°</li>
               </ul>
             </div>
-            <div class="col degreesNight">
+            <div class="col-3" id="forecastTempNight">
               <ul>
                 <li>11°</li>
                 <li>9°</li>
@@ -117,9 +168,10 @@
                 <li>13°</li>
               </ul>
             </div>
+            -->
           </section>
-        <hr />
-        <footer><a href="https://github.com/elinkjellsson/Shecodes-githubTest">Open-source code </a>by Elin Kjellsson</footer>
+        <br />
+        <footer><a href="https://github.com/elinkjellsson/Shecodes-githubTest" target="_blank">Open-source code </a>by Elin Kjellsson</footer>
       </div>
     </div>
     <script src="src/script.js"></script>

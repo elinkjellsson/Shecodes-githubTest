@@ -7,10 +7,10 @@
   position: relative;
   box-sizing: border-box;
   box-shadow: 0px 0px 15px 4px #b3b3b3;
-  border: 3px solid grey;
+  border: 2px solid grey;
   padding: 15px;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 600px;
   background: radial-gradient(
     circle at 0.4% -0.6%,
     rgb(143, 170, 210) 0%,
@@ -67,9 +67,14 @@ i {
   display: block;
   margin: 0 auto;
 }
-
 .units {
   font-size: 30px;
+}
+.forecast-temp-max {
+  color: #000;
+}
+.forecast-temp-min {
+  opacity: 0.8;
 }
 #celcius {
   color: #000;
@@ -93,33 +98,11 @@ i {
   margin-right: 60px;
 }
 
-.row-week {
+#weatherForecast {
   font-size: 20px;
-  display: flex;
-  flex-direction: row;
   margin: 0 auto;
   padding-top: 20px;
-}
-
-.col .days {
-  text-align: left;
-}
-
-.icons {
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-}
-
-.degreesDay {
-  display: inline-block;
-  text-align: right;
-}
-.degreesNight {
-  text-align: right;
-  margin-right: 40px;
+  text-align: center;
 }
 
 footer {
