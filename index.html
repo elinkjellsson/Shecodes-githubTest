@@ -50,33 +50,27 @@
             <div class="col-12 current">
               <h1 id="city">Halmstad</h1>
               <span id="currentDate">Monday 21:55</span>
+              </div>
               <br />
-              <small id="weatherDescription">Sunny</small>
-              <br>
-              <span class="temperature" id="temperature">23</span>
+              <div class="col-6-floatLeft">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon" />
+                <br>
+                <span class="temperature" id="temperature">23</span>
                 <span class="units">
                   <a href="#" class="active" id="celsius-link">ºC</a>
                   |
                   <a href="#" id="fahrenheit-link">ºF</a>
                 </span>
-            </div>
-          </div>
-          <div class="row-rise-set">
-            <div class="col-6">
-              <img
-                id="left"
-                src="https://img.icons8.com/metro/52/000000/sunrise.png"
-              />
-              <p id="sunrise">04:27</p>
-            </div>
-            <div class="col-6">
-              <img
-                id="right"
-                src="https://img.icons8.com/metro/52/000000/sunset.png"
-              />
-              <p id="sunset">21:51</p>
-            </div>
-          </div>
+              </div>
+              <div class="col-6-floatRight">
+              <span id="weatherDescription">Sunny</span>
+              <span id="weatherDetails">
+                <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+              </span>
+              </div>
           <hr />
           <div class="row" id="weatherForecast">
             <div class="col-2">
@@ -129,9 +123,10 @@
             </div>
           </div>
           </section>
-        <br />
-        <footer><a href="https://github.com/elinkjellsson/Shecodes-githubTest" target="_blank">Open-source code </a>by Elin Kjellsson</footer>
       </div>
+      <br />
+      <footer><a href="https://github.com/elinkjellsson/Shecodes-githubTest" target="_blank">Open-source code </a>by Elin
+        Kjellsson</footer>
     </div>
     <script src="src/script.js"></script>
     <script

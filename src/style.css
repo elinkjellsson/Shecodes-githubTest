@@ -47,7 +47,7 @@ i {
 .form-row {
   box-sizing: border-box;
   display: block;
-  padding: 30px;
+  padding: 20px;
 }
 
 .current {
@@ -56,17 +56,22 @@ i {
   margin: 0 auto;
 }
 
-.row-rise-set {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.col-6 {
+.col-6-floatLeft {
   display: block;
   margin: 0 auto;
+  text-align: left;
 }
+
+.col-6-floatRight {
+  display: block;
+  float: right;
+  text-align: right;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 2;
+  margin-left: 56px;
+}
+
 .units {
   font-size: 30px;
 }
@@ -83,8 +88,9 @@ i {
   color: #000;
 }
 #temperature {
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 10px;
+  text-align: left;
 }
 
 #left {
@@ -104,8 +110,16 @@ i {
   padding-top: 20px;
   text-align: center;
 }
+#weatherDetails {
+  font-weight: 500;
+}
+#weatherDescription {
+  font-weight: 500;
+}
 
 footer {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   font-family: monospace;
   opacity: 80%;
