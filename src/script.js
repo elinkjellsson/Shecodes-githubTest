@@ -130,13 +130,12 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
-
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#locationButton");
 currentLocationButton.addEventListener("click", getPosition);
+
 
 
 search("Halmstad");

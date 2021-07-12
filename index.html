@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrapper">
+      <div class="wrapper" id="background-element">
           <form id="search-form">
               <div class="form-row">
                 <div class="col-8 btn">
@@ -57,15 +57,15 @@
                 <br>
                 <span class="temperature" id="temperature">23</span>
                 <span class="units">
-                ºC
+                 ºC
                 </span>
               </div>
               <div class="col-6-floatRight">
               <span id="weatherDescription">Sunny</span>
               <span id="weatherDetails">
                 <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
+                <li>humidity: <span id="humidity"></span>%</li>
+                <li>wind: <span id="wind"></span> m/h</li>
               </ul>
               </span>
               </div>
@@ -88,11 +88,11 @@
       <footer><a href="https://github.com/elinkjellsson/Shecodes-githubTest" target="_blank">Open-source code </a>by Elin
         Kjellsson</footer>
     </div>
-    <script src="src/script.js"></script>
     <script
       src="https://kit.fontawesome.com/22441212cb.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="src/script.js"></script>
   </body>
 </html>
